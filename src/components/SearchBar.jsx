@@ -2,7 +2,7 @@ import { useSate } from "react"
 import './SearchBar.css'
 
 const SearchBar = ({ onSubmit }) => {
-    const [term, setTerm] = useState('')
+    const [term, setTerm] = useSate('')
 
     const handleFormSubmit = (event) => {
         event.preventDefault()
