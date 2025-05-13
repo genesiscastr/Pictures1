@@ -1,8 +1,8 @@
-import { useSate } from "react"
+import { useState } from "react"
 import './SearchBar.css'
 
 const SearchBar = ({ onSubmit }) => {
-    const [term, setTerm] = useSate('')
+    const [term, setTerm] = useState('')
 
     const handleFormSubmit = (event) => {
         event.preventDefault()
@@ -10,17 +10,17 @@ const SearchBar = ({ onSubmit }) => {
         onSubmit(term)
     }
 
-    const HashChange = (event) => {
+    const handleChange = (event) => {
         setTerm(event.target.value)
     }
 
-    conmsole.log('term', term)
+    console.log('term', term)
 
   return (
     <div className="search-bar">
         <form onSubmit={handleFormSubmit}>
             <label>Termino de la busqueda:</label>
-            <input onChange={HashChange} value={term}/>
+            <input onChange={handleChange} value={term}/>
         </form>
     </div>
   )
