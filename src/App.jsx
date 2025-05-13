@@ -15,7 +15,7 @@ function App() {
   return (
     <>
     <h1>Pictures App</h1>
-    <SearchBar onSubmit={handleFormSubmit}/>
+    <SearchBar onSubmit={handleSubmit}/>
     <ImageList images={images}/>
     </>
   )
