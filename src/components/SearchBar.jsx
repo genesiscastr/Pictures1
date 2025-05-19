@@ -6,7 +6,7 @@ const SearchBar = ({ onSubmit }) => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault()
-        console.log('Necesito decirle al componente papa sobre los datos');
+        console.log('Necesito decirle al componente papa sobre los datos')
         onSubmit(term)
     }
 
