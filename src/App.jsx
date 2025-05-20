@@ -12,7 +12,13 @@ function App() {
     const result = await searchImages(term)
     setImages(result)
   }
- 
+  return (
+    <>
+      <h1>Pictures App</h1>
+      <SearchBar onSubmit={handleSubmit}/>
+      <ImageList images={images}/>
+    </>
+  )
 }
 
 export default App
